@@ -234,22 +234,22 @@ open class LocationPicker: UIViewController, UIGestureRecognizerDelegate {
     // MARK: UI Customizations
     
     /// Text that indicates user's current location. __Default__ is __`"Current Location"`__.
-    open var currentLocationText = NSLocalizedString("Current Location", comment: "")
+    open var currentLocationText = "Current Location".localized
     
     /// Text of search bar's placeholder. __Default__ is __`"Search for location"`__.
-    open var searchBarPlaceholder = NSLocalizedString("Search for location", comment: "")
+    open var searchBarPlaceholder = "Search for location".localized
     
     /// Text of location denied alert title. __Default__ is __`"Location access denied"`__
-    open var locationDeniedAlertTitle = NSLocalizedString("Location access denied", comment: "")
+    open var locationDeniedAlertTitle = "Location access denied".localized
     
     /// Text of location denied alert message. __Default__ is __`"Grant location access to use current location"`__
-    open var locationDeniedAlertMessage = NSLocalizedString("Grant location access to use current location", comment: "")
+    open var locationDeniedAlertMessage = "Grant location access to use current location".localized
     
     /// Text of location denied alert _Grant_ button. __Default__ is __`"Grant"`__
-    open var locationDeniedGrantText = NSLocalizedString("Grant", comment: "")
+    open var locationDeniedGrantText = "Grant".localized
     
     /// Text of location denied alert _Cancel_ button. __Default__ is __`"Cancel"`__
-    open var locationDeniedCancelText = NSLocalizedString("Cancel", comment: "")
+    open var locationDeniedCancelText = "Cancel".localized
     
     
     /// Longitudinal distance in meters that the map view shows when user select a location and before zoom in or zoom out. __Default__ is __`1000`__.
@@ -877,7 +877,7 @@ extension LocationPicker {
                 let alertController = UIAlertController(title: locationDeniedAlertTitle, message: locationDeniedAlertMessage, preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: locationDeniedGrantText, style: .default, handler: { (alertAction) in
                     if let url = URL(string: UIApplication.openSettingsURLString) {
-                        UIApplication.shared.openURL(url)
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     }
                 }))
                 alertController.addAction(UIAlertAction(title: locationDeniedCancelText, style: .cancel, handler: nil))
@@ -973,7 +973,7 @@ extension LocationPicker: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 0 {
             cell = LocationCell(locationType: .currentLocation, locationItem: nil)
-            cell.locationNameLabel.text =  NSLocalizedString("Current Location", comment: "")
+            cell.locationNameLabel.text = "Current Location".localized
             cell.iconView.image = currentLocationIcon ?? StyleKit.imageOfMapPointerIcon(color: currentLocationIconColor)
         } else if indexPath.row > 0 && indexPath.row <= searchResultLocations.count {
             let index = indexPath.row - 1

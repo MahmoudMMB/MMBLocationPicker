@@ -28,6 +28,7 @@
 
 import Foundation
 import MapKit
+import UIKit
 
 
 func coordinateObject(fromTuple coordinateTuple: (latitude: Double, longitude: Double)) -> CLLocationCoordinate2D {
@@ -110,4 +111,24 @@ func getLongitudinalDistance(fromMapRect mapRect: MKMapRect) -> Double {
     let westMapPoint = MKMapPoint.init(x: mapRect.maxX, y: mapRect.midY)
     let eastMapPoint = MKMapPoint.init(x: mapRect.minX, y: mapRect.midY)
     return westMapPoint.distance(to: eastMapPoint)
+}
+  
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, tableName: "MMBLocationPickerLocalizable", bundle: Bundle(for: LocationPicker.self), value: "", comment: "")
+    }
+}
+
+
+internal extension Bundle {
+    static var framework: Bundle {
+        return Bundle(for: LocationPicker.self)
+    }
+    
+    static var resources: Bundle? {
+        guard let path = Bundle.main.path(forResource: "MMBLocationPicker", ofType: "bundle") else {
+            return Bundle.init(identifier: "com.iMech.MMBLocationPicker")
+        }
+        return  Bundle(path: path)
+    }
 }

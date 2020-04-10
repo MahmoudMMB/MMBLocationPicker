@@ -118,7 +118,7 @@ open class LocationItem: NSObject, NSCoding {
     }
     
     open override func isEqual(_ object: Any?) -> Bool {
-        guard let object = object else { return false }
+        guard let _ = object else { return false }
         return true//(object as AnyObject).hashValue == hashValue
     }
     

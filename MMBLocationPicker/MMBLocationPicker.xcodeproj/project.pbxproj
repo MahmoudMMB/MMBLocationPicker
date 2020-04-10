@@ -14,7 +14,7 @@
 		896D2008242693CA00315A47 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D2002242693CA00315A47 /* StyleKit.swift */; };
 		896D2009242693CA00315A47 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D2003242693CA00315A47 /* LocationCell.swift */; };
 		896D200A242693CA00315A47 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D2004242693CA00315A47 /* Helpers.swift */; };
-		896D200E2426941B00315A47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 896D20102426941B00315A47 /* Localizable.strings */; };
+		896D200E2426941B00315A47 /* MMBLocationPickerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 896D20102426941B00315A47 /* MMBLocationPickerLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		896D2002242693CA00315A47 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		896D2003242693CA00315A47 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		896D2004242693CA00315A47 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		896D200F2426941B00315A47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		896D20112426941F00315A47 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		896D200F2426941B00315A47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMBLocationPickerLocalizable.strings; sourceTree = "<group>"; };
+		896D20112426941F00315A47 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MMBLocationPickerLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 		896D200B242693CF00315A47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				896D20102426941B00315A47 /* Localizable.strings */,
+				896D20102426941B00315A47 /* MMBLocationPickerLocalizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896D200E2426941B00315A47 /* Localizable.strings in Resources */,
+				896D200E2426941B00315A47 /* MMBLocationPickerLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,13 +184,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		896D20102426941B00315A47 /* Localizable.strings */ = {
+		896D20102426941B00315A47 /* MMBLocationPickerLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				896D200F2426941B00315A47 /* en */,
 				896D20112426941F00315A47 /* ar */,
 			);
-			name = Localizable.strings;
+			name = MMBLocationPickerLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,6 +321,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6L6J9465M6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,7 +334,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.iMech.MMBLocationPicker.MMBLocationPicker;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iMech.MMBLocationPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -347,6 +349,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6L6J9465M6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -359,7 +362,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.iMech.MMBLocationPicker.MMBLocationPicker;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iMech.MMBLocationPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

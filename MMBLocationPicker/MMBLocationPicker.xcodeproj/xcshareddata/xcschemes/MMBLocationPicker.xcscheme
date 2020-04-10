@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "896D201A2426959100315A47"
-               BuildableName = "MMBLocationPickerDemo.app"
-               BlueprintName = "MMBLocationPickerDemo"
-               ReferencedContainer = "container:MMBLocationPickerDemo.xcodeproj">
+               BlueprintIdentifier = "896D1FEE2426936A00315A47"
+               BuildableName = "MMBLocationPicker.framework"
+               BlueprintName = "MMBLocationPicker"
+               ReferencedContainer = "container:MMBLocationPicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896D201A2426959100315A47"
-            BuildableName = "MMBLocationPickerDemo.app"
-            BlueprintName = "MMBLocationPickerDemo"
-            ReferencedContainer = "container:MMBLocationPickerDemo.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896D201A2426959100315A47"
-            BuildableName = "MMBLocationPickerDemo.app"
-            BlueprintName = "MMBLocationPickerDemo"
-            ReferencedContainer = "container:MMBLocationPickerDemo.xcodeproj">
+            BlueprintIdentifier = "896D1FEE2426936A00315A47"
+            BuildableName = "MMBLocationPicker.framework"
+            BlueprintName = "MMBLocationPicker"
+            ReferencedContainer = "container:MMBLocationPicker.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
