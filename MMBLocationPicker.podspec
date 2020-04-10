@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '10.0'
   s.swift_version = '5'
   s.source       = { :git => 'https://github.com/MahmoudMMB/MMBLocationPicker.git', :tag => 's.version' }
-  s.source_files  = 'Source/**/*.{swift}'
+  s.source_files  = 'Source/*.{swift}'
   s.resource_bundles  = {
     'MMBLocationPicker' => [
       'Resources/*.{lproj,storyboard}/*.{xib,strings}'
